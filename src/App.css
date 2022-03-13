@@ -1,0 +1,54 @@
+.showToast{
+position: fixed;
+}
+.hideToast{
+  position: none;
+
+}
+.scrollView{
+  height: 100%;
+  overflow-y: auto;
+  overflow: scroll;
+
+}
+.my-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-center img{
+  width:20rem;
+  margin-top: 8rem;
+}
+.shimmerAffect {
+  width: 100%;
+  height: 130px;
+  margin: 30px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: opacity;
+  position: relative;
+  animation: skeleton-shimmer .8s linear infinite alternate;
+}
+.shimmerAffect:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  background-color: #ebeef1;
+  border-radius: 3px
+}
+@keyframes skeleton-shimmer {
+  0% {
+      opacity: .34
+  }
+
+  to {
+      opacity: .9
+  }
+}
